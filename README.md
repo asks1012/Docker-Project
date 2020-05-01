@@ -97,4 +97,4 @@ If you don't want to use `docker-compose`, you can run the following two command
   > Gmail: asks1012@gmail.com
 
 
-                                                   𝓨𝓸𝓾 𝓐𝓻𝓮 𝓓𝓸𝓷𝓮
+💯𝓨𝓸𝓾 𝓐𝓻𝓮 𝓓𝓸𝓷𝓮
