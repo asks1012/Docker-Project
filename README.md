@@ -55,4 +55,7 @@ Create a directory and paste the given `docker-compose.yml` file into the direct
 
 - Go to browser and enter the link: `http://0.0.0.0:8080` or `http://ServerName:8080`. You will be directed to owncloud-web-server.
 
+- Enter the credentials as in the below image :
+
+![screenshot](Screenshot (140).png)
 
