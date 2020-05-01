@@ -1,5 +1,5 @@
 # Docker-Project
-docker-compose file (two-tier architecture) : ownCloud+MariaDB
+**docker-compose file (two-tier architecture) : ownCloud+MariaDB**
 
 > [ownCloud](https://owncloud.org/) is a file sharing server that puts the control and security of your own data back into your hands. It allows you to run a personal cloud file storage service. It has features that are comparable to other cloud storage services such as Dropbox.
 
