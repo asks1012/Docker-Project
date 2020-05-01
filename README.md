@@ -55,7 +55,26 @@ Create a directory and paste the given `docker-compose.yml` file into the direct
 
 - Go to browser and enter the link: `http://0.0.0.0:8080` or `http://ServerName:8080`. You will be directed to owncloud-web-server.
 
-- Enter the credentials as in the below image :
+- Enter the credentials as in the below screenshot :
 
-![screenshot](Screenshot (140).png)
+![screenshot](https://github.com/asks1012/Docker-Project/blob/master/Screenshot%20(140).png)
 
+🛑 Note: The above screenshot consisting login credentials is just a sample. It is highly recommended to edit the `docker-compose.yml` file and use your own personalised login and password. 🛑
+
+```
+If you get something like "ERROR CONNECTING TO DATABASE....", just stop the firewall and reload the page!
+```
+
+- After that, login with owncloud admin username and password **to enter your personal owncloud server** where you can share, upload the files on your pc. You can also connect to the server with the owncloud mobile app.
+
+## Connecting to the database remotely :
+
+- For this, you need to install `mysql` and `mariadb` software on the host o.s of docker.
+
+  > **Note:** mysql and mariadb are conflicting packages. You need to enter `--allowerasing` option to overcome the issue.
+  
+- Run `docker inspect *CONTAINER ID of mariadb*` and find the IP address of mariadb container.
+
+- Run `mysql -h *IP of mariadb* -u *username of mariadb* -p*password of mariadb*` to connect to the mariadb database remotely.
+
+- Now you can run `mysql shell` commands.
