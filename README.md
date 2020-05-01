@@ -7,4 +7,13 @@
 
 ## Getting Started 
 
-These instructions will get you a copy of the project up.
+Get ready with the following stuff before diving into **docker-compose.yml** file.
+
+## Installing software :
+
+- Installing docker:
+
+ - Add the following link to your local repository
+ 
+ `https://download.docker.com/linux/centos/7/x86_64/stable/`
+
