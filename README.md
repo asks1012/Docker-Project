@@ -67,14 +67,34 @@ If you get something like "ERROR CONNECTING TO DATABASE....", just stop the fire
 
 - After that, login with owncloud admin username and password **to enter your personal owncloud server** where you can share, upload the files on your pc. You can also connect to the server with the owncloud mobile app.
 
-## Connecting to the database remotely :
+## Connecting to the database remotely from host :
 
 - For this, you need to install `mysql` and `mariadb` software on the host o.s of docker.
 
   > **Note:** mysql and mariadb are conflicting packages. You need to enter `--allowerasing` option to overcome the issue.
   
-- Run `docker inspect *CONTAINER ID of mariadb*` and find the IP address of mariadb container.
+- Run the following and find the IP address of mariadb container:
 
-- Run `mysql -h *IP of mariadb* -u _username of mariadb_ -p***password of mariadb***` to connect to the mariadb database remotely.
+  > docker inspect `CONTAINER ID of mariadb`
 
-- Now you can run `mysql shell` commands.
+- Run the following to connect to the mariadb database remotely :
+
+  > mysql -h `IP of mariadb` -u `username of mariadb` -p`password of mariadb`
+
+- If your mariadb is correctly working, you will be redirected to `mariadb shell` and you can run sql commands like `show databases;`, `show tables;`, `exit;`  etc.,
+
+## Alternative :
+If you don't want to use `docker-compose`, you can run the following two commands to get your owncloud server :
+
+> docker run -dit -e MYSQL_ROOT_PASSWORD=10122001 -e MYSQL_USER=username -e MYSQL_PASSWORD=password -e MYSQL_DATABASE=mydb -v mysql_volume:/var/lib/mysql --name dbos mariadb:latest
+
+> docker run -dit -e OWNCLOUD_DOMAIN=sagardomain -e OWNCLOUD_DB_TYPE=mysql -e OWNCLOUD_DB_NAME=mydb -e OWNCLOUD_DB_USERNAME=username -e OWNCLOUD_DB_PASSWORD=password -e OWNCLOUD_DB_HOST=dbos -e OWNCLOUD_ADMIN_USERNAME=username -e OWNCLOUD_ADMIN_PASSWORD=password -v owncloud_volume:/var/www/html/owncloud --name owncloud_os -p8080:80 --link dbos:owncloud-db owncloud:latest
+
+## Author :
+
+  > A.Sri Krishna Sagar
+  
+  > Gmail: asks1012@gmail.com
+
+
+                                                   𝓨𝓸𝓾 𝓐𝓻𝓮 𝓓𝓸𝓷𝓮
