@@ -11,9 +11,48 @@ Get ready with the following stuff before diving into **docker-compose.yml** fil
 
 ## Installing software :
 
-- Installing docker:
+- **Installing docker:**
 
   - Add the following link to your local repository
  
     `https://download.docker.com/linux/centos/7/x86_64/stable/`
+
+  - run `yum install docker-ce --nobest` to download and install docker community edition (NOTE: If your O.S is RHEL).
+  
+  - `start` the docker services and `enable` it if docker is required after boot.
+  
+- **Download MariaDB image:**
+
+  - To download the MariaDB docker image, run:
+  
+    `docker pull mariadb`
+    
+- **Download owncloud image:**
+
+  - To download the owncloud docker image, run:
+    
+    `docker pull owncloud`
+    
+(Tip: You can run `docker images` to see all the downloded docker images)
+
+- **Installing docker-compose:**
+
+  - Head to the [link](https://docs.docker.com/compose/install/). It will guide you to download and install docker-compose.
+
+- **Installing httpd**
+
+  - Go to the following [link](http://httpd.apache.org/docs/2.4/install.html) to download and install httpd. You can configure `httpd.conf` file.
+  
+## Running the docker-compose :
+
+Create a directory and paste the given `docker-compose.yml` file into the directory. In the Terminal, head to the directory and run:
+
+> `docker-compose up -d`
+
+❗ Here `-d` is an option to run docker in background. You can omit it if not required. ❗
+
+## Initial Setup :
+
+- Go to browser and enter the link: `http://0.0.0.0:8080` or `http://ServerName:8080`. You will be directed to owncloud-web-server.
+
 
