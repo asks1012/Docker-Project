@@ -13,7 +13,7 @@ Get ready with the following stuff before diving into **docker-compose.yml** fil
 
 - Installing docker:
 
- - Add the following link to your local repository
+  - Add the following link to your local repository
  
- `https://download.docker.com/linux/centos/7/x86_64/stable/`
+    `https://download.docker.com/linux/centos/7/x86_64/stable/`
 
