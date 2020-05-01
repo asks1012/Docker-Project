@@ -95,6 +95,8 @@ If you don't want to use `docker-compose`, you can run the following two command
   > A.Sri Krishna Sagar
   
   > Gmail: asks1012@gmail.com
+  
+  > https://www.linkedin.com/in/akurathi-sri-krishna-sagar-5aa653190?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B0QCHt6GHT8yDSIOHr590Vg%3D%3D
 
 
 💯𝓨𝓸𝓾 𝓐𝓻𝓮 𝓓𝓸𝓷𝓮
