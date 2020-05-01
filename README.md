@@ -75,6 +75,6 @@ If you get something like "ERROR CONNECTING TO DATABASE....", just stop the fire
   
 - Run `docker inspect *CONTAINER ID of mariadb*` and find the IP address of mariadb container.
 
-- Run `mysql -h *IP of mariadb* -u ***username of mariadb*** -p***password of mariadb***` to connect to the mariadb database remotely.
+- Run `mysql -h *IP of mariadb* -u _username of mariadb_ -p***password of mariadb***` to connect to the mariadb database remotely.
 
 - Now you can run `mysql shell` commands.
