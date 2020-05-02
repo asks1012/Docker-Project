@@ -57,7 +57,7 @@ Create a directory and paste the given `docker-compose.yml` file into the direct
 
 - Enter the credentials as in the below screenshot :
 
-![screenshot](https://github.com/asks1012/Docker-Project/blob/master/Screenshot%20(140).png)
+![screenshot](https://github.com/asks1012/Docker-Project/blob/master/images/Screenshot%20from%202020-05-02%2011-48-38.png)
 
 🛑 Note: The above screenshot consisting login credentials is just a sample. It is highly recommended to edit the `docker-compose.yml` file and use your own personalised login and password. 🛑
 
@@ -66,6 +66,14 @@ If you get something like "ERROR CONNECTING TO DATABASE....", just stop the fire
 ```
 
 - After that, login with owncloud admin username and password **to enter your personal owncloud server** where you can share, upload the files on your pc. You can also connect to the server with the owncloud mobile app.
+
+- Screenshot of login page :
+
+![login page](https://github.com/asks1012/Docker-Project/blob/master/images/Screenshot%20from%202020-05-02%2011-50-25.png)
+
+- Finally, you will be redirected to the home page of owncloud server as in the below image :
+
+![home page](https://github.com/asks1012/Docker-Project/blob/master/images/Screenshot%20from%202020-05-02%2011-50-52.png)
 
 ## Connecting to the database remotely from host :
 
@@ -82,6 +90,10 @@ If you get something like "ERROR CONNECTING TO DATABASE....", just stop the fire
   > mysql -h `IP of mariadb` -u `username of mariadb` -p`password of mariadb`
 
 - If your mariadb is correctly working, you will be redirected to `mariadb shell` and you can run sql commands like `show databases;`, `show tables;`, `exit;`  etc.,
+
+### Screenshot of MariaDB shell:
+
+![MariaDB shell](https://github.com/asks1012/Docker-Project/blob/master/images/Screenshot%20from%202020-05-02%2010-57-19.png)
 
 ## Alternative :
 If you don't want to use `docker-compose`, you can run the following two commands to get your owncloud server :
